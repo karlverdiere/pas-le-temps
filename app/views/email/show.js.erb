@@ -1,0 +1,4 @@
+$(document).ready(function() {
+ var stockEmail   = $("<%= j (render "email") %>");
+ $("#email-" + <%=  @email.id %>).append(stockEmail);
+});

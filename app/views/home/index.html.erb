@@ -6,7 +6,7 @@
   <li class="tableaux"><%= category.title  %></li>
   <div class="card">
     <ul>
-      <% category.tasks.each do |task|  %>
+      <% category.tasks.each do |task| %>
       <li>
         <%= task.title  %>
         <% unless task.deadline.nil? %>
@@ -31,3 +31,12 @@
     <% end %>
   </div>
 </div>
+<form>
+  <div>
+    <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label for="subscribeNews">Souhaitez-vous vous abonner à la newsletter ?</label>
+  </div>
+  <div>
+    <button type="submit">S'abonner</button>
+  </div>
+</form>

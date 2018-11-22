@@ -1,0 +1,12 @@
+
+
+      <% @email.each do |mail| %>
+
+  <div class="lol" id="email-<%=mail.id.to_s%>">
+        <h1><%= link_to mail.object , "email/#{mail.id}", remote: true , action: :show  %></h1>
+        <%= link_to mail, remote: true, method: :delete,  data: { confirm: 'Are you sure?' } do %>
+  <button>Delete!</button>
+    </div>
+
+    <% end %>
+    <% end %>
